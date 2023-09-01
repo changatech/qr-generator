@@ -1,0 +1,105 @@
+*{
+    /* box-sizing: border-box; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-image: url("/assets/changa.tech-bg.webp");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 50% auto;
+   
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+a .header-logo {
+    width: 150px;
+    height: auto;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Add this CSS to style the modal and container */
+
+/* Modal Styles */
+.modal-dialog {
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.glassy-container {
+    background: rgba(248, 248, 248, 0.005); /* Background color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for a glassy effect */
+    backdrop-filter: blur(1px); /* Blurred background behind the container */
+    padding: 40px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Additional styling for text inside the container */
+h1 {
+    font-size: 32px; /* Adjust the font size */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+label, h5 {
+    font-weight: 500;
+    font-size: 18px; /* Adjust the font size */
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: 500;
+}
+
+/* Adjust other styles as needed */
+
+.btn .fas.fa-qrcode {
+    margin-right: 5px; /* Adjust the space between the icon and text */
+    font-size: 20px; /* Adjust the icon size */
+    color: #fff; /* Change the icon color */
+}
+
+.loading-spinner {
+    display: none;
+    text-align: center;
+}
+
+.loading-spinner img {
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+
+footer {
+    display: fle;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/CHANGA.tech.ico" type="image/x-icon">
+
+     <!-- Favicon for browsers -->
+     <link rel="icon" href="assets/CHANGA.tech.ico" type="image/x-icon">
+
+     <!-- Apple Touch Icon (iOS devices) -->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/CHANGA.tech.ico">
+ 
+     <!-- Android Web App Manifest Icon -->
+     <link rel="manifest" href="manifest.json">
+     <link rel="icon" type="image/png" sizes="192x192" href="assets/CHANGA.tech.ico">
+     <link rel="icon" type="image/png" sizes="512x512" href="assets/CHANGA.tech.ico">
+
+    <title>QR Generator | CHANGA.tech</title>
+</head>
+<body>
+    <!-- Header Section with Background Image -->
+    <header class="header">
+        <div class="container text-center text-dark">
+            <a href="https://changa.tech">
+                <img class="header-logo" src="/assets/CHANGA.tech-LOGO.png" alt="CHANGA.tech">
+            </a>
+            <h1>Welcome to QR Code Generator</h1>
+            <p>Create your QR Code for Free with CHANGA.tech</p>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container mt-5">
+            <div class="glassy-container">
+                <h1 class="mb-4">QR Generator @ CHANGA.tech</h1>
+                <div class="form-group">
+                    <label for="qr-text">Enter Text or URL:</label>
+                    <input type="text" class="form-control" id="qr-text" placeholder="Enter text or URL">
+                </div>
+                <button id="generate-qr" class="btn btn-primary" data-toggle="modal" data-target="#qrCodeModal">
+                    <i class="fas fa-qrcode"></i>
+                    Generate QR Code
+                </button>
+
+            </div>
+        </div>
+    
+         <!-- QR Code Modal -->
+        <div class="modal fade" id="qrCodeModal" tabindex="-1" role="dialog" aria-labelledby="qrCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="qrCodeModalLabel">QR Code</h5>
+                        <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="qrCode">
+                            <!-- <img src="" id="generated-qr-image"> -->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-succcess">
+                            <a href="#" id="download-link" download="qrcode.png" class="btn btn-primary">Download QR Code</a>
+                        </button>
+                        
+                        <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2023  CHANGA.tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include qrcode-generator library for QR code generation -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <!-- Bootstrap JS (optional, for certain components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
